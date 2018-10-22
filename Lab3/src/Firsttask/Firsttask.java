@@ -13,10 +13,19 @@ class Animal{
     public String getName(){
         return this.name;
     }
+    public int getPaws(){
+        return this.paws;
+    }
+    public void setHasWool(boolean hasWool){
+        this.hasWool = hasWool;
+    }
+    public boolean getHadWool(){
+        return this.hasWool;
+    }
 }
 class Dog extends Animal{
     String breed;
-    Dog(){
+    Dog() {
         super();                            //using super constructor;
     }
     Dog(int paws,boolean hasWool,String breed){
@@ -27,7 +36,7 @@ class Dog extends Animal{
         return this.breed;
     }
     public int CountPaws(){
-        return super.paws;
+        return super.getPaws();
     }
     public void setName(String newName){
         this.name = newName;                 //overloading
@@ -42,12 +51,12 @@ public class Firsttask{
     public static void main(String[] args){
         Animal siyr = new Animal();
         Dog aktos = new Dog(4,true,"Golden RETRIEVER");
-        siyr.hasWool = true;
+        siyr.setHasWool(true);
         siyr.setName("MyCow");
         aktos.setName("ThebestDog");
-        System.out.println(siyr.getName());
-        System.out.println(aktos.getName());
-        System.out.println(aktos.CountPaws());
-        System.out.println(aktos.getBreed());
+        System.out.println(siyr.name);
+        System.out.println(aktos.name);
+        System.out.println(aktos.paws);
+        System.out.println(aktos.breed);
     }
 }

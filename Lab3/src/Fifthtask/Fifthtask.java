@@ -1,6 +1,6 @@
 class Position{
-    public int x;
-    public int y;
+    int x;
+    int y;
     Position(int x, int y){
         this.x = x;
         this.y = y;
@@ -12,6 +12,7 @@ class Position{
         return (this.y == b.y);
     }
 }
+
 abstract class Piece{
     public Position a = null;
     public Position b = null;
@@ -37,7 +38,7 @@ class Queen extends Piece{
     }
     boolean isLegalMove(Position a,Position b){
         super.setPositions(a,b);
-        return ((a.xeq(b))||(a.yeq(b)) ||((b.x - a.y)==(b.y - b.y)));
+        return ((a.xeq(b))||(a.yeq(b)) ||((b.x - a.x)==(b.y - b.y)));
     }
 }
 class Bishop extends Piece{

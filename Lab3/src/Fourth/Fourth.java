@@ -1,6 +1,6 @@
 class PersonSample{
-    private String name;
-    private String surname;
+    String name;
+    String surname;
     PersonSample(){
 
     }
@@ -80,14 +80,15 @@ class EmployeeSample extends PersonSample {
     public String getSurname(){
         return "Employee's surname is " + super.getSurname();
     }
+
 }
 
 public class Fourth{
     public static void main(String[] args){
         StudentSample s = new StudentSample("Assyl","Suleiman",2,"17BD110353");
         EmployeeSample e = new EmployeeSample("Assyl","Suleiman",25000,"17BD110353");
-        PersonSample p1 = s;
-        PersonSample p2 = e;
+        PersonSample p1 = new StudentSample("Assyl","Suleiman",2,"17BD110353");
+        PersonSample p2 = new EmployeeSample("Assyl","Suleiman",25000,"17BD110353");
         System.out.println(p1.getName());
         System.out.println(p2.getName());
     }

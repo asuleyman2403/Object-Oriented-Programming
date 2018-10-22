@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 class Person{
-    private String name;
-    private String surname;
-    private String id;
+    String name;
+    String surname;
+    String id;
     Person(){}
     Person(String name,String surname,String id){
         this.name = name;
@@ -36,9 +36,9 @@ class Person{
     }
 }
 class Employee extends Person{
-    private double salary;
-    private int year;
-    private String insuranceNumber;
+    double salary;
+    int year;
+    String insuranceNumber;
     Employee(){
         super();
     }
@@ -60,6 +60,7 @@ class Employee extends Person{
     public double getSalary(){
         return salary;
     }
+
     public int getYear(){
         return year;
     }
@@ -82,6 +83,10 @@ class Manager extends Employee{
     Manager(String name,String surname,String id,double salary,int year,String insuranceNumber,ArrayList<Employee> e){
         super(name,surname,id,salary,year,insuranceNumber);
         this.e = e;
+    }
+
+    public String getname(){
+        return super.getName();
     }
     public void setEmployees(ArrayList<Employee> e){
         this.e = e;
@@ -116,6 +121,7 @@ public class Thirdtask{
                                  100000000,1960,"Insured",e);
         Manager m2 = new Manager("Nursyltan","Nazarbayev","ThePresident",
                                  100000000,1960,"Insured",e);
+        System.out.println(m2.getname());
         System.out.println(m1.toString());
         if(m1.equals(m2)){
             System.out.println("They are same person");
