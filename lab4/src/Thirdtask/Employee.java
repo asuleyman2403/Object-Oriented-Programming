@@ -1,7 +1,7 @@
 package Thirdtask;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-class Employee extends Person implements Cloneable,Comparable{
+class Employee extends Person implements Comparable{
     double salary;
     Date hireDate;
     String insuranceNumber;
@@ -44,7 +44,9 @@ class Employee extends Person implements Cloneable,Comparable{
     @Override
     public Employee clone() throws CloneNotSupportedException {
         Employee cloned =  (Employee) super.clone();
-        //cloned.hireDate = (Date)hireDate.clone();
+        cloned.salary = this.getSalary();
+        cloned.insuranceNumber = this.insuranceNumber;
+        cloned.hireDate = (Date)hireDate.clone();
         return cloned;
     }
 

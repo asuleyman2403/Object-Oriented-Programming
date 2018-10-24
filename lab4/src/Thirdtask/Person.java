@@ -1,6 +1,7 @@
 package Thirdtask;
 
-class Person {
+
+class Person implements Cloneable {
     String name;
     String surname;
     String id;
@@ -36,6 +37,14 @@ class Person {
         return name + " " + surname + " " + id;
     }
 
+    @Override
+    protected Person clone() throws CloneNotSupportedException {
+        Person cloned = (Person)super.clone();
+        cloned.name = this.getName();
+        cloned.id = this.getId();
+        cloned.surname = this.getSurname();
+        return cloned;
+    }
 }
 
 

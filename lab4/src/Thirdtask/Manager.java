@@ -2,9 +2,9 @@ package Thirdtask;
 
 import java.util.ArrayList;
 import java.util.Date;
-class Manager extends Employee{
-    private ArrayList<Employee> e;
-    private double bonus;
+class Manager extends Employee {
+    ArrayList<Employee> e;
+    double bonus;
     Manager(){
         super();
     }
@@ -64,7 +64,7 @@ class Manager extends Employee{
     @Override
     public Manager clone() throws CloneNotSupportedException {
         Manager m = (Manager)super.clone();
-        //m.setEmployees((ArrayList<Employee>)this.e.clone());
+        m.e = this.getEmployees();
         return m;
     }
 }

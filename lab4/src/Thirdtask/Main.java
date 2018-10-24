@@ -14,8 +14,15 @@ public class Main{
                 100000000, new Date(2000,3,24),"Insured",e);
         m1.setBonus(24032000);
         m2.setBonus(24032000);
-        /*Manager m3 = m1.clone();
-        Manager m4 = m2.clone();*/
+        try{
+            Manager m3 = m1.clone();
+            Manager m4 = m2.clone();
+            System.out.println("m3 and m4:  " + m3.compareTo(m4));
+
+        }catch(CloneNotSupportedException ex){
+            System.out.println("Error");
+        }
         System.out.println(m1.compareTo(m2));
+
     }
 }
