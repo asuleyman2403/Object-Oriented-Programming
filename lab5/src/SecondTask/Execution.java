@@ -8,13 +8,15 @@ import java.io.*;
 public class Execution {
     private static void addTextBook(String[] newTextBook){
         try{
-            FileOutputStream fos = new FileOutputStream("TexBooks.txt",true);
+            ArrayList<TextBook> textBooks = new ArrayList<>();
+            FileOutputStream fos = new FileOutputStream("TextBooks.txt",true);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             String isbn = newTextBook[0];
             String title = newTextBook[1];
             String author = newTextBook[2];
             TextBook textB = new TextBook(isbn,title,author);
-            oos.writeObject(textB);
+            textBooks.add(textB);
+            oos.writeObject(textBooks);
             oos.flush();
             oos.close();
             fos.close();
@@ -28,14 +30,16 @@ public class Execution {
     }
     private static void addInstructor(String[] instructor){
         try{
+            ArrayList<Instructor> instructors = new ArrayList<>();
             FileOutputStream fos = new FileOutputStream("Instructors.txt",true);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            String firstname = instructor[0];
-            String lastname = instructor[1];
+            String firstName = instructor[0];
+            String lastName = instructor[1];
             String department = instructor[2];
             String email = instructor[3];
-            Instructor newInstructor = new Instructor(firstname,lastname,department,email);
-            oos.writeObject(newInstructor);
+            Instructor newInstructor = new Instructor(firstName,lastName,department,email);
+            instructors.add(newInstructor);
+            oos.writeObject(instructors);
             oos.flush();
             oos.close();
             fos.close();
@@ -47,20 +51,22 @@ public class Execution {
             System.exit(1000);
         }
     }
-    private static void addCourse(String[] courseinfo){
+    private static void addCourse(String[] courseInfo){
         try{
+            ArrayList<Course> courses = new ArrayList<>();
             FileOutputStream fos = new FileOutputStream("courses.txt",true);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            String courseTitle = courseinfo[0];
-            String isbn = courseinfo[1];
-            String title = courseinfo[2];
-            String author = courseinfo[3];
-            String firstName = courseinfo[4];
-            String lastName = courseinfo[5];
-            String department = courseinfo[6];
-            String email = courseinfo[7];
+            String courseTitle = courseInfo[0];
+            String isbn = courseInfo[1];
+            String title = courseInfo[2];
+            String author = courseInfo[3];
+            String firstName = courseInfo[4];
+            String lastName = courseInfo[5];
+            String department = courseInfo[6];
+            String email = courseInfo[7];
             Course course = new Course( courseTitle, isbn, title, author, firstName, lastName, department, email);
-            oos.writeObject(course);
+            courses.add(course);
+            oos.writeObject(courses);
             oos.flush();
             oos.close();
             fos.close();
@@ -112,7 +118,7 @@ public class Execution {
                                     exit = true;
                                     break;
                                 case "add_textbook":
-                                    System.out.print("Write all required information in required order: ");
+                                    System.out.println("Write all required information in required order: isbn,title,author");
                                     String[] tbs = new String[3];
                                     for(int i = 0;i<3;i++){
                                         tbs[i] = scan.next();
@@ -123,7 +129,7 @@ public class Execution {
                                     bw.append(date.toString() + "  admin added new textbook " + tbs[1] + "\n");
                                     break;
                                 case "add_instructor":
-                                    System.out.print("Write all required information in required order: ");
+                                    System.out.println("Write all required information in required order: name, surname, department, email");
                                     String[] inss = new String[4];
                                     for(int  i = 0;i<4;i++){
                                         inss[i] = scan.next();
@@ -134,7 +140,7 @@ public class Execution {
                                     bw.append(date.toString() + " admin added new instructor " + inss[0] + " " + inss[1] + "\n");
                                     break;
                                 case "add_course":
-                                    System.out.print("Write all required information in required order: ");
+                                    System.out.println("Write all required information in required order: course_title, isbn, book_title, author, name, surname, department, email");
                                     String[] courses = new String[8];
                                     for(int i =0;i<8;i++){
                                         courses[i] = scan.next();
@@ -156,16 +162,7 @@ public class Execution {
                 try { //shows only one course instead of list
                     FileInputStream fis = new FileInputStream("courses.txt");
                     ObjectInputStream ois = new ObjectInputStream(fis);
-                    ArrayList<Course> courses = new ArrayList<>();
-                    while(true){
-                        try{
-                            Course course = (Course)ois.readObject();
-                            courses.add(course);
-                        }catch(Exception ex){
-                            break;
-                        }
-                    }
-
+                    ArrayList<Course> courses = (ArrayList<Course>) ois.readObject();
                     for(Course course: courses) {
                         System.out.println(course.toString());
                     }
@@ -173,14 +170,14 @@ public class Execution {
                     fis.close();
                 }catch(FileNotFoundException fex) {
                     System.out.println("There are some problems!");
-                    System.exit(1000);
+                    System.exit(200);
                 }catch(IOException ioex) {
                     System.out.println("There are some problems!");
-                    System.exit(1000);
-                }/*catch(ClassNotFoundException ex){
+                    System.exit(400);
+                }catch(ClassNotFoundException ex){
                     System.out.println("There are some problems!");
                     System.exit(1000);
-                }*/
+                }
           }
           /*br.close();
           bw.flush();

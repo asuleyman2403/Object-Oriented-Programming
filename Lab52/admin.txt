@@ -1,0 +1,98 @@
+User: root
+Password: 48758992
+Mon Nov 12 03:14:57 ALMT 2018 admin logged in to a system
+Mon Nov 12 03:15:26 ALMT 2018 admin added new textbook newtitle
+Mon Nov 12 03:16:11 ALMT 2018 admin added new instructor Assyl Suleiman
+Mon Nov 12 03:17:19 ALMT 2018 admin added new course 363452403
+
+Mon Nov 12 03:49:26 ALMT 2018 admin logged in to a system
+
+Mon Nov 12 03:50:48 ALMT 2018 admin logged in to a system
+
+Mon Nov 12 03:52:14 ALMT 2018 admin logged in to a system
+
+Tue Nov 20 13:05:46 ALMT 2018 admin logged in to a system
+Tue Nov 20 13:05:58 ALMT 2018 admin added new course 1
+Tue Nov 20 13:07:42 ALMT 2018 admin added new course exit
+
+ admin has logged to the system at Thu Nov 22 01:05:50 ALMT 2018 
+
+ admin added new course adsf adsf asdf asdf adsf asdf asdf asdf at Thu Nov 22 01:06:10 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 01:12:52 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 01:13:05 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 01:20:53 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 01:21:04 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 01:23:49 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 01:24:01 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 01:46:48 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 01:46:56 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:09:10 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:09:19 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:14:14 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:14:22 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:17:08 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:17:18 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:17:49 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:17:57 ALMT 2018
+
+ admin added new course 11 66 55 77 88 22 44 33 at Thu Nov 22 02:18:18 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:23:04 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:23:13 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:24:13 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:24:21 ALMT 2018
+
+ admin added new course 11 66 55 77 88 22 44 33 at Thu Nov 22 02:24:33 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:25:54 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:26:05 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:27:48 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:27:57 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:29:51 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:30:00 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:30:50 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:30:58 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:31:25 ALMT 2018 
+
+ admin added new course 11 66 55 77 88 22 44 33 at Thu Nov 22 02:31:34 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:37:16 ALMT 2018 
+
+ admin added new course 1 6 5 7 8 2 4 3 at Thu Nov 22 02:37:25 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:37:45 ALMT 2018 
+
+ admin added new course 11 66 55 77 88 22 44 33 at Thu Nov 22 02:37:54 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 02:56:34 ALMT 2018 
+
+ admin added new instructor lastname firstname fit email at Thu Nov 22 02:56:56 ALMT 2018
+
+ admin has logged to the system at Thu Nov 22 03:22:20 ALMT 2018 
